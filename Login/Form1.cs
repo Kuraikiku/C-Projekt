@@ -277,6 +277,9 @@ namespace Login
             pictureBoxPw1.Visible = false;
             pictureBoxPw2.Visible = false;
             pictureBoxUserName.Visible = false;
+            aClient.stoppeClient();
+            aClient = null;
+            
         }
 
         #region Events
@@ -291,15 +294,7 @@ namespace Login
         {
             if(Registration.pruefeBenutzerChar(textBoxUserName.Text, labelBenutzername))
             {
-                if (!Registration.pruefeBenutzerNamen(textBoxUserName.Text, labelBenutzername))
-                {
-                    pruefRegist[0] = false;
-                    pictureBoxUserName.Visible = false;
-                }
-                else
-                {
-                    aClient.sendeNachricht("DRN" + TRENN + textBoxUserName.Text);
-                }
+                labelBenutzername.Text = "";
             }
             else
             {
@@ -309,7 +304,15 @@ namespace Login
 
         private void textBoxUserName_Leave(object sender, EventArgs e)
         {
-            
+            if (!Registration.pruefeBenutzerNamen(textBoxUserName.Text, labelBenutzername))
+            {
+                pruefRegist[0] = false;
+                pictureBoxUserName.Visible = false;
+            }
+            else
+            {
+                aClient.sendeNachricht("DRN" + TRENN + textBoxUserName.Text);
+            }
         }
 
         private void textBoxPw1_Leave(object sender, EventArgs e)
