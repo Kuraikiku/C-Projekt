@@ -52,7 +52,7 @@ namespace Login
             }
             catch (Exception)
             {
-                f.zeigeFehlermeldung("Fehler beim Verbindungsaufbau.","Connectionerror");
+                new Error("Fehler beim Verbindungsaufbau.").ShowDialog();
             }
         }
 
@@ -90,7 +90,7 @@ namespace Login
                     }
                     else
                     {
-                        f.zeigeFehlermeldung("Verzögerung bei Übertragung", "Connectionerror");
+                        new Error("Verzögerung bei Übertragung.").ShowDialog();
                     }
                     break;
             }
@@ -119,7 +119,7 @@ namespace Login
             }
             catch (Exception)
             {
-                f.zeigeFehlermeldung("Fehler bei Senden der Nachricht.", "Connectionerror");
+                new Error("Fehler bei Senden der Nachricht.").ShowDialog();
             }
         }
 
@@ -131,7 +131,7 @@ namespace Login
                 {
                 
                     stream.Read(buffer, 0, buffer.Length);
-                    f.zeigeFehlermeldung(Encoding.ASCII.GetString(buffer),"Nachricht");
+                    checkNachricht(Encoding.ASCII.GetString(buffer));
                
                 }
                 catch (Exception e)

@@ -201,7 +201,7 @@ namespace Login
 
         private void buttonGast_Click(object sender, EventArgs e)
         {
-
+            new Error("TestMeldung").ShowDialog();
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -450,10 +450,7 @@ namespace Login
         #endregion
 
 
-        public void zeigeFehlermeldung(String s1,String s2)
-        {
-            MessageBox.Show(s1,s2);
-        }
+       
 
         private void buttonSkipOpening_Click(object sender, EventArgs e)
         {
