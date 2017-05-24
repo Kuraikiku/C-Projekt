@@ -52,7 +52,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBoxRegistHeader = new System.Windows.Forms.PictureBox();
             this.panelLogin = new System.Windows.Forms.Panel();
+            this.pictureBoxLoginHeader = new System.Windows.Forms.PictureBox();
             this.labelLoginMeldung = new System.Windows.Forms.Label();
             this.buttonCancLogin = new System.Windows.Forms.Button();
             this.buttonLoginLogin = new System.Windows.Forms.Button();
@@ -71,7 +73,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPw2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPw1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRegistHeader)).BeginInit();
             this.panelLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoginHeader)).BeginInit();
             this.panelOpening.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
@@ -221,6 +225,7 @@
             this.panelRegist.Controls.Add(this.label3);
             this.panelRegist.Controls.Add(this.label2);
             this.panelRegist.Controls.Add(this.label1);
+            this.panelRegist.Controls.Add(this.pictureBoxRegistHeader);
             this.panelRegist.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRegist.Location = new System.Drawing.Point(0, 0);
             this.panelRegist.Name = "panelRegist";
@@ -376,8 +381,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Benutzername: ";
             // 
+            // pictureBoxRegistHeader
+            // 
+            this.pictureBoxRegistHeader.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxRegistHeader.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxRegistHeader.BackgroundImage")));
+            this.pictureBoxRegistHeader.Location = new System.Drawing.Point(0, 30);
+            this.pictureBoxRegistHeader.Name = "pictureBoxRegistHeader";
+            this.pictureBoxRegistHeader.Size = new System.Drawing.Size(449, 30);
+            this.pictureBoxRegistHeader.TabIndex = 9;
+            this.pictureBoxRegistHeader.TabStop = false;
+            // 
             // panelLogin
             // 
+            this.panelLogin.Controls.Add(this.pictureBoxLoginHeader);
             this.panelLogin.Controls.Add(this.labelLoginMeldung);
             this.panelLogin.Controls.Add(this.buttonCancLogin);
             this.panelLogin.Controls.Add(this.buttonLoginLogin);
@@ -391,6 +407,16 @@
             this.panelLogin.Size = new System.Drawing.Size(449, 480);
             this.panelLogin.TabIndex = 5;
             this.panelLogin.Visible = false;
+            // 
+            // pictureBoxLoginHeader
+            // 
+            this.pictureBoxLoginHeader.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLoginHeader.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxLoginHeader.BackgroundImage")));
+            this.pictureBoxLoginHeader.Location = new System.Drawing.Point(0, 30);
+            this.pictureBoxLoginHeader.Name = "pictureBoxLoginHeader";
+            this.pictureBoxLoginHeader.Size = new System.Drawing.Size(449, 30);
+            this.pictureBoxLoginHeader.TabIndex = 8;
+            this.pictureBoxLoginHeader.TabStop = false;
             // 
             // labelLoginMeldung
             // 
@@ -530,8 +556,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPw2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPw1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRegistHeader)).EndInit();
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoginHeader)).EndInit();
             this.panelOpening.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
@@ -574,6 +602,8 @@
         private System.Windows.Forms.Panel panelOpening;
         private System.Windows.Forms.Button buttonSkipOpening;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.PictureBox pictureBoxLoginHeader;
+        private System.Windows.Forms.PictureBox pictureBoxRegistHeader;
     }
 }
 

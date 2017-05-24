@@ -49,7 +49,8 @@ namespace Login
             pictureBoxLogo.Image = Image.FromFile("Logo.png");
             pictureBoxLogo.Visible = true;
             pictureBoxLogo.Location = new Point(panelOpening.Location.X + panelOpening.Size.Width / 2 - pictureBoxLogo.Size.Width / 2, panelOpening.Location.Y + panelOpening.Size.Height / 2-pictureBoxLogo.Size.Height/2);
-            
+        
+
             //new Opening(panelOpening, pictureBoxLogo, background,this);
         }
 
@@ -62,7 +63,6 @@ namespace Login
 
        
         #endregion
-
 
         #region Design
         private void ladeHintergrund()

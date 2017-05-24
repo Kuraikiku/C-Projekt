@@ -1,6 +1,6 @@
 ﻿namespace Login
 {
-    partial class Form2
+    partial class Lobby
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Form2
+            // Lobby
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.ClientSize = new System.Drawing.Size(513, 409);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Lobby";
+            this.Text = "Lobby";
             this.ResumeLayout(false);
 
         }
